@@ -3,6 +3,11 @@ name = "url-shortening-service"
 version = "0.0.0"
 edition = "2024"
 
+[profile.release]
+codegen-units = 1
+lto = true
+strip = true
+
 [dependencies]
 tokio = { version = "1.52.3", features = ["full"] }
 serde = { version = "1.0.228", features = ["derive"] }
