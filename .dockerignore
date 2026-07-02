@@ -1,0 +1,21 @@
+# Cargo
+target
+debug
+
+# Environment Variables
+.env*
+
+# Git
+.git
+.github
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Zed
+.zed
+
+# Miscellaneous
+.DS_Store
+*.pem
