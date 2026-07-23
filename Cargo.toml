@@ -1,0 +1,17 @@
+[package]
+name = "url-shortening-service"
+version = "0.0.0"
+edition = "2024"
+description = "URL Shortener API that helps shorten long URLs."
+license = "AGPL-3"
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = 3
+strip = true
+
+[dependencies]
+tokio = { version = "1.53.1", features = ["full"] }
+axum = { version = "0.8.9" }
+serde = { version = "1.0.229", features = ["derive"] }
